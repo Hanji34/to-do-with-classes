@@ -1,10 +1,13 @@
 import React from 'react';
+import {TodoList} from './TodoList';
+import {TodoForm} from './TodoForm';
+import {Title} from './Title';
 
 //Container Component
 //Todo Id
 
 window.id = 0;
-class TodoApp extends React.Component{
+export class TodoApp extends React.Component{
     constructor(props){
         //Pass props to parent class
         super(props);
@@ -45,11 +48,11 @@ render(){
         <div>
             <Title />
             <TodoForm addTodo={this.addTodo.bind(this)}/>
-            <Todo List
+            <TodoList
                 todos={this.state.data}
                 remove={this.handleRemove.bind(this)}
             />
-        <div/>
+        </div>
     )
 }
 }

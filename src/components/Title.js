@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Title = () => {
+export const Title = () => {
     return (
       <div>
          <div>
@@ -9,3 +9,5 @@ const Title = () => {
       </div>
     );
   }
+
+
