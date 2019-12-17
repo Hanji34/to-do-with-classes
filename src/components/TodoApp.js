@@ -13,7 +13,7 @@ class TodoApp extends React.Component{
             data: []
         }
     }
-}
+
 // Add todo handler
 addTodo(val){
     //Assemble data
@@ -51,4 +51,5 @@ render(){
             />
         <div/>
     )
+}
 }
